@@ -18,5 +18,12 @@
    <autonomous/>
    <permissions/>
   </behaviorContent>
+  <behaviorContent path="tasks/age">
+   <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
  </contents>
 </package>

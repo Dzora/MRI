@@ -1,0 +1,27 @@
+topic: ~MainDialog()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+
+u:([hello hi "Hello mr shopkeeper"]) Hello \pau=1000\ what do you want to buy?^gotoReactivate(age)
+
+
+ 
+proposal: %age ^run(tasks/age) 
+    u1:(e:taskDone) your are $myAge ^gotoReactivate(choice) 
+    u1:(e:taskFailed) It failed ^gotoReactivate(choice)
+    
+    
+proposal: %choice These are the categories we have in stock. Which one do you like? ^run(tasks/displayCategories)
+    u1:(soda) 
+    u1:(cigarette)
+    u1:(candy)
+      
