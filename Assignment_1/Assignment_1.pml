@@ -15,6 +15,9 @@
         <File name="candy" src="html/images/candy.jpeg" />
         <File name="cigarettes" src="html/images/cigarettes.jpeg" />
         <File name="index" src="html/index.html" />
+        <File name="candy" src="html/candy.html" />
+        <File name="cigarettes" src="html/cigarettes.html" />
+        <File name="soda" src="html/soda.html" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="behavior_1/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />
