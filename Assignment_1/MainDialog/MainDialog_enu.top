@@ -16,10 +16,9 @@ u:([hello hi "hi pepper"]) Hello \pau=700\ what do you want to buy?^gotoReactiva
 
  
 proposal: %age ^run(tasks/age) 
-    u1:(e:taskDone) your are $myAge ^gotoReactivate(choice) 
-    u1:(e:taskFailed) I failed to read your age. Do you want to try again?
-        u2:(yes) Okay \pau=700\ one moment please. ^gotoReactivate(age)
-        u2:(no) ^gotoReactivate(choise)
+    u1:(e:taskDone) your are $myAge ^gotoReactivate(test) 
+    u1:(e:taskFailed) I failed to read your age.^gotoReactivate(test)
+ 
     
     
     
@@ -28,3 +27,4 @@ proposal: %choice These are the categories we have in stock. Which one do you li
     u1:(cigarette) Okay \pau=1000\ here are our cigarette sortiment.
     u1:(candy) Okay \pau=1000\ here are our candy sortiment.
       
+proposal: %test ^run(tasks/displayCategories)
