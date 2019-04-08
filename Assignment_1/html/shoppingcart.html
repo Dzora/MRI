@@ -1,16 +1,32 @@
-<div class="shopping-cart">
-    <!-- Title -->
-    <div class="title">
-        Shopping cart
-    </div>
-    <div class="image">
-        <img src="images/cart.png" style="height:70px;width:100px" alt="" />
-    </div>
+<!DOCTYPE html>
+<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+<script src=js/main.js></script>
+<body onload="startSubscribe();">
+    toTabletHandler();
 
 
-    <ul>
-        <li>soda</li>
-        <li>cig</li>
-        <li>candy</li>
-    </ul> 
-</div>
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+            <h3>Shopping cart</h3>
+        </div>
+        <div class="image">
+            <img src="images/cart.png" style="height:70px;width:100px" alt="" />
+        </div>
+        <div class="shopping-cart">
+          <div class="shopping-cart-head">
+            <span class="product-quantity">0</span> Product(s) in Cart
+          </div>
+          <ul class="shopping-cart-list">
+            <li>Coca-cola</li>
+            <li>Cars</li>
+            <li>Ciggarette</li>
+          </ul>
+          <div class="cart-buttons">
+            <a href="#0" class="button empty-cart-btn">Empty</a>
+            <a href="#0" class="button cart-checkout">Checkout - <span class="total-price">$100</span></a>
+          </div>
+        </div>
+      
+    </div>
+</body>
