@@ -1,6 +1,25 @@
-<div class="column" align=center>
-<div class="row" align=left ></a>
-  <a href="index.html">
-	  <img src="images/cigarettes.jpeg" alt="cigarettes" style="width:100%">
-  </a>
-</div>
+<!DOCTYPE html>
+<script src="/libs/qimessaging/1.0/qimessaging.js"></script>>
+<script src=js/main.js></script>>
+
+<body onload="startSubscribe();">
+
+	<div class="column">
+		<div class="row" align=right >
+			<button type="button" id="cart" onclick="cart()" style="height:70px;width:120px" >Cart</button>
+		</div>
+
+		<div class="row" align=right >
+			<button type="button" id="goBack" onclick="goBack()" style="height:70px;width:120px" >Go Back!</button>
+		</div>	
+		
+		
+	</div>	 
+
+
+  	<div class="row" align=left >
+		<img src="images/cig/marlboro.jpeg" id="marlboro" onclick="marlboroClick()" style="width:43%">
+		<img src="images/cig/prince.jpeg" id="prince" onclick="princeClick()" style="width:23%">
+  	</div>
+	
+</body>

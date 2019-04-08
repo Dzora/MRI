@@ -1,6 +1,17 @@
-<div class="column" align=center>
-<div class="row" align=left ></a>
-  <a href="index.html">
-	  <img src="images/soda.jpeg" alt="Candy" style="width:100%">
-  </a>
-</div>
+<!DOCTYPE html>
+<script src="/libs/qimessaging/1.0/qimessaging.js"></script>>
+<script src=js/main.js></script>>
+
+<body onload="startSubscribe();">
+	<div class="column" align=left>
+		<button type="button" id="goBack" onclick="goBack()" style="height:70px;width:120px" >Go Back!</button> 
+  	<div class="row" align=left >
+		<img src="images/soda/cola.jpeg" id="cola" onclick="colaClick()" style="width:33%">
+		<img src="images/soda/sprite.jpeg" id="sprite" onclick="spriteClick()" style="width:33%">
+  	</div>
+
+  	<div class="row" align=bottom>
+		<img src="images/soda/troca.jpeg" id="troca" onclick="trocaClick()" style="width:33%">
+  	</div>
+	</div>
+</body>
