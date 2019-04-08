@@ -12,6 +12,7 @@ language: enu
 
 
 u:([hello hi "hi pepper"]) Hello \pau=1000\  ^gotoReactivate(choice)
+u:([back "go back"]) $back=1
 
 u:(e:checkAge $checkAge="cig") Okay \pau=1000\ you have to be 18 years or older to buy cigarettes. Let me check your age. One moment pls. ^gotoReactivate(age)
  

@@ -31,6 +31,7 @@
         <File name="ferrari" src="html/images/candy/ferrari.jpeg" />
         <File name="djungel" src="html/images/candy/djungel.jpeg" />
         <File name="shoppingcart" src="html/shoppingcart.html" />
+        <File name="cart" src="html/images/cart.png" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="behavior_1/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />

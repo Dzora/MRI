@@ -11,10 +11,10 @@ function startSubscribe() {
 
 function toTabletHandler(value) { 
     // get the data and put it in the id "command"
-    document.getElementById("command").value= value;
-    tmp = document.getElementById("command").value;
-    // send the data to html page
-    document.getElementById("command").innerHTML= tmp;
+
+    
+    document.getElementById('cart').innerHTML += ('<li>'+value+'</li>');
+    
     // process data with the function choice()
 }
 

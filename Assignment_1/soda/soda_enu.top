@@ -10,8 +10,8 @@ language: enu
 # Replying to speech
 #u:(~hello) ~hello
 
-u:([cola coca-cola coke]) Okay nice! I'll add one coca cola to your shoppinglist.
+u:([cola coca-cola coke]) Okay nice! I'll add one coca cola to your shoppinglist. $typeOfSoda="cola"
 
-u:(e:type $type=="cola") I want cola
+u:(e:type $type=="cola") I want cola $typeOfSoda="cola"
 u:(e:type $type=="sprite") I want sprite
 u:(e:type $type=="troca") I want trocadero
