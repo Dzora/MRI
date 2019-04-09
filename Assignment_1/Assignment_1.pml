@@ -4,7 +4,6 @@
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="tasks/age" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="tasks/displayCategories" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="ExampleDialog" src="behavior_1/ExampleDialog/ExampleDialog.dlg" />

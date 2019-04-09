@@ -3,6 +3,8 @@
 <script src=js/main.js></script>
 <body onload="startSubscribe();">
 
+    <button type="button" id="goBack" onclick="goBack()" style="height:70px;width:120px" >Go Back!</button> 
+
     <div class="shopping-cart">
         <!-- Title -->
         <div class="title">
@@ -15,11 +17,7 @@
           <div class="shopping-cart-head">
             <span class="product-quantity">0</span> Product(s) in Cart
           </div>
-          <ul class="shopping-cart-list" id="cart">
-            <li>Coca-cola</li>
-            <li>Cars</li>
-            <li>Ciggarette</li>
-          </ul>
+          <ul class="shopping-cart-list" id="cart"></ul>
           <div class="cart-buttons">
             <a href="#0" class="button empty-cart-btn">Empty</a>
             <a href="#0" class="button cart-checkout">Checkout - <span class="total-price">$100</span></a>

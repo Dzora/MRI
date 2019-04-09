@@ -11,10 +11,7 @@ function startSubscribe() {
 
 function toTabletHandler(value) { 
     // get the data and put it in the id "command"
-
-    
     document.getElementById('cart').innerHTML += ('<li>'+value+'</li>');
-    
     // process data with the function choice()
 }
 
@@ -68,4 +65,8 @@ function princeClick(){
 
 function goBack(){
     sendToChoregraphe("goBack");
+}
+
+function shopCart(){
+    sendToChoregraphe("shopcart");
 }

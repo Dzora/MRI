@@ -11,7 +11,11 @@ language: enu
 #u:(~hello) ~hello
 
 
-u:(e:type $type=="ferrari") I want cars
-u:(e:type $type=="djungel") I want djungelvral
+u:(ferrari) Okay nice! I'll add one ferrari to your shoppinglist. $typeOfCandy="Ferrari"
+u:(sjungelvral) Okay good choice! I'll add one djungelvral to your shoppinglist. $typeOfCandy="Djungelvrål"
+
+u:(e:type $type=="ferrari") Okay nice! I'll add one ferrari to your shoppinglist. $typeOfCandy="Ferrari"
+u:(e:type $type=="djungel") Okay good choice! I'll add one djungelvral to your shoppinglist. $typeOfCandy="Djungelvrål"
+
 
 
