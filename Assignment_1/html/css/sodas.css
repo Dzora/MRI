@@ -1,0 +1,128 @@
+html {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: url(../images/shop.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
+	width: 100%;
+	background-position: center;
+	font-family: sans-serif;
+	background-color: #cccccc;
+}
+
+
+.back {
+
+  	top: 8px;
+  	left: 16px;
+	text-align: left;
+	float: left;
+	right: 0;
+	background: url(../images/goback.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+	height: 60px;
+	margin-top: 20px;
+	width: 60px;
+
+}
+
+.cart {
+
+  	top: 8px;
+  	right: 16px;
+	left: 0;
+	text-align: right;
+	float: right;
+	background: url(../images/cart.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+	height: 60px;
+	margin-top: 20px;
+	width: 60px;
+}
+
+.categories {
+}
+
+.cola {
+	background: url(../images/soda/cola.jpeg);
+  	background-size: 100% 100%;
+	letter-spacing: 2px;
+	height: 260px;
+	margin-top: 20px;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+ 	resize: none;
+  	outline: none;
+	width: 260px;
+
+   -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+
+}
+.troca {
+	background: url(../images/soda/troca.jpeg);
+  	background-size: 100% 100%;
+	letter-spacing: 2px;
+	height: 260px;
+	margin-top: 20px;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+ 	resize: none;
+  	outline: none;
+	width: 260px;
+
+   -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+
+}
+.sprite{
+	background: url(../images/soda/sprite.jpeg);
+  	background-size: 100% 100%;
+	letter-spacing: 2px;
+	height: 260px;
+	margin-top: 20px;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+ 	resize: none;
+  	outline: none;
+	width: 260px;
+
+   -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+
+}
+
