@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html>
-<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
-<script src=js/main.js></script>
-<head>
-<link rel="stylesheet" type="text/css" href="css/categories.css" >
-</head>
-<body onload="startSubscribe();">
+	<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+	<script src=js/main.js></script>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/categories.css" >
+	</head>
+	<body onload="startSubscribe();">
+		<div class="Back">
+			<input type="submit" id="goback" value="" onclick="goBack()"></input>
+		</div>
 
-<div class="menus">
-	<form id="goCart" onClick="backClick()" alt="Cart">
-		<imput type="submit" class="cart" value="Cart">
-	</form>
-</div>
+		<div class="Cart">
+			<input type="submit" id="cart" value="" onclick="shopCart()"></input>
+		</div>
 
-<div class="test">
-	<form id="goBack" onClick="cartClick()" alt="Back">
-		<imput type="submit" class="back" value="Go Back">
-	</form>
-</div>
+		<div class="Categories">
+			<input type="submit" id="candy" value="Candy" onclick="candyClick()"></input>
+			<input type="submit" id="soda" value="Soda" onclick="sodaClick()"></input>
+			<input type="submit" id="cig" value="Cigarettes" onclick="cigClick()"></input>
+		</div>
 
-<div class="categories">
-	<form id="goCandy" onClick="candyClick()" alt="Candy">
-		<input type="submit" class="candy" value="Candy">	
-	</form>
-	<form id="goSoda" onClick="sodaClick()" alt="Soda">
-		<input type="submit" class="soda" value="Soda">	
-	</form>
-
-	<form id="goCiggarettes" onClick="cigaretteClick()" alt="Cigarettes">
-		<input type="submit" class="cigarettes" value="Cigarettes">	
-	</form>
-
-</div>
-
-</body>
+	</body>
 </html>

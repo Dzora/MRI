@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
-<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
-<script src=js/main.js></script>
-<head>
-<link rel="stylesheet" type="text/css" href="css/shopping.css" >
-</head>
-<body onload="startSubscribe();">
+    <script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+    <script src=js/main.js></script>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/shopping.css" >
+    </head>
+    <body onload="startSubscribe();">
+        <div class="Back">
+            <input type="submit" id="goback" value="" onclick="goBack()"></input>
+        </div>
 
 
-<div class="test">
-	<form id="goBack" onClick="goBack()" alt="Back">
-		<imput type="submit" class="back" value="Go Back">
-	</form>
-</div>
-
-
-    <div class="shopping-cart">
+        <div class="shopping-cart" id="cart">
         <!-- Title -->
         <div class="title">
             <h3>Shopping cart</h3>
@@ -24,15 +20,14 @@
             <img src="images/cart.png" style="height:70px;width:100px" alt="" />
         </div>
         <div class="shopping-cart">
-          <div class="shopping-cart-head">
-            <span class="product-quantity">0</span> Product(s) in Cart
-          </div>
-          <ul class="shopping-cart-list" id="cart"></ul>
-          <div class="cart-buttons">
-            <a href="#0" class="button empty-cart-btn">Empty</a>
-            <a href="#0" class="button cart-checkout">Checkout - <span class="total-price">$100</span></a>
-          </div>
-        </div>
-      
+            <div class="shopping-cart-head">
+                <span class="product-quantity">0</span> Product(s) in Cart
+            </div>
+                <ul class="shopping-cart-list" id="cartList"></ul>
+            <div class="cart-buttons">
+                <a href="#0" class="button empty-cart-btn">Empty</a>
+                <a href="#0" class="button cart-checkout">Checkout - <span class="total-price">$100</span></a>
+            </div>
+        </div> 
     </div>
 </body>

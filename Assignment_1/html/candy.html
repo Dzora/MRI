@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html>
-<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
-<script src=js/main.js></script>
-<head>
-<link rel="stylesheet" type="text/css" href="css/candys.css" >
-</head>
-<body onload="startSubscribe();">
-<div class="menus">
-	<form id="goCart" onClick="goBack()" alt="Cart">
-		<imput type="submit" class="cart" value="Cart">
-	</form>
-</div>
+	<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+	<script src=js/main.js></script>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/candys.css" >
+	</head>
+	<body onload="startSubscribe();">
+		<div class="Back">
+			<input type="submit" id="goback" value="" onclick="goBack()"></input>
+		</div>
 
-<div class="test">
-	<form id="goBack" onClick="cartClick()" alt="Back">
-		<imput type="submit" class="back" value="Go Back">
-	</form>
-</div>
+		<div class="Cart">
+			<input type="submit" id="cart" value="" onclick="shopCart()"></input>
+		</div>
 
-<div class="categories">
-	<form id="ferrari" onClick="ferrariClick()" alt="Ferrari">
-		<input type="submit" class="ferrari" value="Ferrari">	
-	</form>
-	<form id="djungel" onClick="djungelClick()" alt="Djungelvrål">
-		<input type="submit" class="djungel" value="Djungelvrål">	
-	</form>
-</div>
-
-</body>
+		<div class="´Candy">
+			<input type="submit" id="ferrari" value="Ferrari" onclick="ferarriClick()"></input>
+			<input type="submit" id="djungel" value="Djungel.." onclick="djungelClick()"></input>
+		</div>
+	</body>
 </html>

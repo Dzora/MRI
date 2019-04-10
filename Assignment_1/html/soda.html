@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html>
-<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
-<script src=js/main.js></script>
-<head>
-<link rel="stylesheet" type="text/css" href="css/sodas.css" >
-</head>
-<body onload="startSubscribe();">
+	<script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+	<script src=js/main.js></script>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/sodas.css" >
+	</head>
+	<body onload="startSubscribe();">
 
-<div class="menus">
-	<form id="goCart" onClick="goBack()" alt="Cart">
-		<imput type="submit" class="cart" value="Cart">
-	</form>
-</div>
+		<div class="Back">
+			<input type="submit" id="goback" value="" onclick="goBack()"></input>
+		</div>
 
-<div class="test">
-	<form id="goBack" onClick="cartClick()" alt="Back">
-		<imput type="submit" class="back" value="Go Back">
-	</form>
-</div>
+		<div class="Cart">
+			<input type="submit" id="cart" value="" onclick="shopCart()"></input>
+		</div>
 
-<div class="categories">
-	<form id="cola" onClick="colaClick()" alt="cola">
-		<input type="submit" class="cola" value="Coca-Cola">	
-	</form>
-	<form id="sprite" onClick="spriteClick()" alt="Sprite">
-		<input type="submit" class="sprite" value="Sprite">	
-	</form>
-	<form id="troca" onClick="trocaClick()" alt="Trocadero">
-		<input type="submit" class="troca" value="Trocadero">	
-	</form>
-</div>
-
-</body>
+		<div class="Sodas">
+			<input type="submit" id="cola" value="Coca-Cola" onclick="colaClick()"></input>
+			<input type="submit" id="sprite" value="Sprite" onclick="spriteClick()"></input>
+			<input type="submit" id="troca" value="Trocadero" onclick="trocaClick()"></input>
+		</div>
+	</body>
 </html>
 
