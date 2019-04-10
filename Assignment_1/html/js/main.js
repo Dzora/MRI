@@ -71,6 +71,6 @@ function shopCart(){
     sendToChoregraphe("shopcart");
 }
 
-function test() {
-    console.log("I work");
+function updateList() {
+    console.lLisog("I work");
 }

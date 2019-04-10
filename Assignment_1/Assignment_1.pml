@@ -31,6 +31,15 @@
         <File name="djungel" src="html/images/candy/djungel.jpeg" />
         <File name="shoppingcart" src="html/shoppingcart.html" />
         <File name="cart" src="html/images/cart.png" />
+        <File name="candys" src="html/css/candys.css" />
+        <File name="categories" src="html/css/categories.css" />
+        <File name="cigarettes" src="html/css/cigarettes.css" />
+        <File name="shopping" src="html/css/shopping.css" />
+        <File name="sodas" src="html/css/sodas.css" />
+        <File name="goback" src="html/images/goback.jpeg" />
+        <File name="goback" src="html/images/goback.png" />
+        <File name="shop" src="html/images/shop.jpeg" />
+        <File name="shop" src="html/images/shop.jpg" />
     </Resources>
     <Topics>
         <Topic name="ExampleDialog_enu" src="behavior_1/ExampleDialog/ExampleDialog_enu.top" topicName="ExampleDialog" language="en_US" />

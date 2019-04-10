@@ -12,9 +12,11 @@ language: enu
 
 
 u:([hello hi "hi pepper"]) Hello \pau=1000\  ^gotoReactivate(choice)
-u:([back "go back"]) $back=1
+u:([back "go back"]) Okay, ^gotoReactivate(choice)
 
 u:(e:checkAge $checkAge="cig") Okay \pau=1000\ you have to be 18 years or older to buy cigarettes. Let me check your age. One moment pls. ^gotoReactivate(age)
+
+u:(e:goBack) ^gotoReactivate(choice)
  
 proposal: %age ^run(tasks/age) 
     u1:(e:taskDone) Okay \pau=1000\ I think that you are $myAge years old. $age=$myAge
@@ -23,7 +25,7 @@ proposal: %age ^run(tasks/age)
         u2:(no) Okay then \pau=1000\ ^gotoReactivate(choice)
  
     
-proposal: %choice These are the categories we have in stock. Which one do you like? $hello=1
+proposal: %choice  $hello=1 These are the categories we have in stock. Which one do you like?
     u1:(soda) Okay \pau=1000\ here are our soda sortiment.$item="soda"
     u1:(cigarette) Okay \pau=1000\ you have to be eightteen years or older to buy cigarettes. Let me check your age. One moment please. ^gotoReactivate(age)
     u1:(candy) Okay \pau=1000\ here are our candy sortiment. $item="candy"

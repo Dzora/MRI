@@ -66,6 +66,7 @@ input#candy {
 	height: 260px;
 	width: 260px;
 	margin-top: 220px;
+	margin-bottom: 5px;
 
 	letter-spacing: 2px;
 	color: white;
