@@ -9,9 +9,24 @@ function startSubscribe() {
     });
 }
 
-function toTabletHandler(value) { 
+function toTabletHandler(list) { 
     // get the data and put it in the id "command"
-    document.getElementById('cartList').innerHTML += ('<li>'+value+'</li>');
+
+    var listLength = list.length;
+    var sum = 0;
+
+    document.getElementById('number').innerHTML += (listLength);
+
+    for (var i = 0; i < listLength; i++) {
+        var kr = parseInt(list[i].substr(list[i].indexOf(' ')+1),10);
+        document.getElementById('cartList').innerHTML += ('<li>'+list[i]+'kr'+'</li>');
+        sum += kr;
+    }
+
+    document.getElementById('totalprice').innerHTML += sum;
+
+
+    //document.getElementById('cartList').innerHTML += ('<li>'+value+'</li>');
     // process data with the function choice()
 }
 
@@ -71,6 +86,36 @@ function shopCart(){
     sendToChoregraphe("shopcart");
 }
 
-function updateList() {
-    console.lLisog("I work");
+function pay() {
+    sendToChoregraphe("pay");
+}
+
+function removeItem() {
+    var element = document.getElementById('cartList'); // will return element
+    
+    var childNodes = element.children;
+
+    var listLength = childNodes.length;
+    var sum = 0;
+
+    if(listLength != 0) {
+        element.removeChild(childNodes[0]); // will remove the element from DOM
+        
+
+        var element = document.getElementById('cartList'); // will return element
+    
+        var childNodes = element.children;
+
+        var listLength = childNodes.length;
+
+        document.getElementById('number').innerHTML = (listLength);
+
+        for (var i = 0; i < listLength; i++) {
+            var kr = parseInt(childNodes[i].substr(childNodes[i].indexOf(' ')+1),10);
+            sum += kr;
+            sendToChoregraphe(sum);
+        }
+
+        document.getElementById('totalprice').innerHTML += sum;
+    }
 }

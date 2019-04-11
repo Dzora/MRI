@@ -11,23 +11,31 @@
         </div>
 
 
-        <div class="shopping-cart" id="cart">
+        <div class="shopping-cart">
         <!-- Title -->
         <div class="title">
             <h3>Shopping cart</h3>
         </div>
+
         <div class="image">
             <img src="images/cart.png" style="height:70px;width:100px" alt="" />
         </div>
-        <div class="shopping-cart">
-            <div class="shopping-cart-head">
-                <span class="product-quantity">0</span> Product(s) in Cart
+
+        <div class="shopping-cart-head">
+            <span class="product-quantity" id="number"></span> Product(s) in Cart
+        </div>
+        <div class="test">
+            <ul class="shopping-cart-list" id="cartList">
+            </ul>
+        </div>
+        <div class="cart-buttons">
+            <div class="Price">
+                <span class="Total"></span> Total price: 
+                <span class="Total price" id="totalprice"></span> kr
             </div>
-                <ul class="shopping-cart-list" id="cartList"></ul>
-            <div class="cart-buttons">
-                <input type="submit" id="pay" value="Pay" onclick="candyClick()"></input>
-                <input type="submit" id="remove" value="Remove Item" onclick="sodaClick()"></input>
-            </div>
-        </div> 
+            <input type="submit" id="pay" value="Pay" onclick="pay()"></input>
+            <input type="submit" id="remove" value="Remove" onclick="removeItem()"></input>
+        </div>
+
     </div>
 </body>

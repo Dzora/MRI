@@ -11,11 +11,11 @@ language: enu
 #u:(~hello) ~hello
 
 
-u:(ferrari) Okay nice! I'll add one ferrari to your shoppinglist. $typeOfCandy="Ferrari"
-u:(sjungelvral) Okay good choice! I'll add one djungelvral to your shoppinglist. $typeOfCandy="Djungelvrål"
+u:(ferrari) Okay nice! I'll add one ferrari to your shoppinglist. $typeOfCandy="Ferrari 25"
+u:(sjungelvral) Okay good choice! I'll add one djungelvral to your shoppinglist. $typeOfCandy="Djungelvrål 18"
 
-u:(e:type $type=="ferrari") Okay nice! I'll add one ferrari to your shoppinglist. $typeOfCandy="Ferrari"
-u:(e:type $type=="djungel") Okay good choice! I'll add one djungelvral to your shoppinglist. $typeOfCandy="Djungelvrål"
+u:(e:type $type=="ferrari") Okay nice! I'll add one ferrari to your shoppinglist. $typeOfCandy="Ferrari 25"
+u:(e:type $type=="djungel") Okay good choice! I'll add one djungelvral to your shoppinglist. $typeOfCandy="Djungelvrål 18"
 
 
 

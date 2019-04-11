@@ -10,10 +10,10 @@ language: enu
 # Replying to speech
 #u:(~hello) ~hello
 
-u:([cola coca-cola coke]) Okay nice! I'll add one coca cola to your shoppinglist. $typeOfSoda="Cola"
-u:(sprite) Okay good choice! I'll add one sprite to your shoppinglist. $typeOfSoda="Sprite"
-u:(trocadero) Awesome! This is my favorite. I'll add one troca to your shoppinglist. $typeOfSoda="Trocadero"
+u:([cola coca-cola coke]) Okay nice! I'll add one coca cola to your shoppinglist. $typeOfSoda="Cola 20"
+u:(sprite) Okay good choice! I'll add one sprite to your shoppinglist. $typeOfSoda="Sprite 15"
+u:(trocadero) Awesome! This is my favorite. I'll add one trocadero to your shoppinglist. $typeOfSoda="Trocadero 15"
 
-u:(e:type $type=="cola") Okay nice! I'll add one coca cola to your shoppinglist. $typeOfSoda="Cola"
-u:(e:type $type=="sprite") Okay good choice! I'll add one sprite to your shoppinglist. $typeOfSoda="Sprite"
-u:(e:type $type=="troca") Awesome! This is my favorite. I'll add one troca to your shoppinglist. $typeOfSoda="Trocadero"
+u:(e:type $type=="cola") Okay nice! I'll add one coca cola to your shoppinglist. $typeOfSoda="Cola 20"
+u:(e:type $type=="sprite") Okay good choice! I'll add one sprite to your shoppinglist. $typeOfSoda="Sprite 15"
+u:(e:type $type=="troca") Awesome! This is my favorite. I'll add one trocadero to your shoppinglist. $typeOfSoda="Trocadero 15"

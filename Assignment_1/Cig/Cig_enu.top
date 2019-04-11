@@ -10,5 +10,8 @@ language: enu
 # Replying to speech
 #u:(~hello) ~hello
 
-u:(e:type $type=="marlboro") I want marlboro.
-u:(e:type $type=="prince") I want prince.
+u:(marlboro) Okay! Remember that smoking is bad for you! I'll add one marlboro to your shoppinglist. $typeOfCig="Marlboro 50"
+u:(prince) Okay! Remember that smoking is bad for you! I'll add one prince to your shoppinglist. $typeOfCig="Prince 55"
+
+u:(e:type $type=="marlboro") Okay! Remember that smoking is bad for you! I'll add one marlboro to your shoppinglist. $typeOfCig="Marlboro 50"
+u:(e:type $type=="prince") Okay! Remember that smoking is bad for you! I'll add one prince to your shoppinglist. $typeOfCig="Prince 55"

@@ -11,12 +11,12 @@ language: enu
 #u:(~hello) ~hello
 
 
-u:([hello hi "hi pepper"]) Hello \pau=1000\  ^gotoReactivate(choice)
-u:([back "go back"]) Okay, ^gotoReactivate(choice)
+u:([hello hi "hi pepper" "Can you help me"]) Hello \pau=1000\  ^gotoReactivate(choice)
+u:([back "go back"]) Okay, ^gotoReactivate(choice1)
 
 u:(e:checkAge $checkAge="cig") Okay \pau=1000\ you have to be 18 years or older to buy cigarettes. Let me check your age. One moment pls. ^gotoReactivate(age)
 
-u:(e:goBack) ^gotoReactivate(choice)
+u:(e:goBack) ^gotoReactivate(choice1)
  
 proposal: %age ^run(tasks/age) 
     u1:(e:taskDone) Okay \pau=1000\ I think that you are $myAge years old. $age=$myAge
@@ -26,7 +26,12 @@ proposal: %age ^run(tasks/age)
  
     
 proposal: %choice  $hello=1 These are the categories we have in stock. Which one do you like?
-    u1:(soda) Okay \pau=1000\ here are our soda sortiment.$item="soda"
-    u1:(cigarette) Okay \pau=1000\ you have to be eightteen years or older to buy cigarettes. Let me check your age. One moment please. ^gotoReactivate(age)
-    u1:(candy) Okay \pau=1000\ here are our candy sortiment. $item="candy"
+    u1:([soda "I want soda"]) Okay \pau=1000\ here are our soda sortiment.$item="soda"
+    u1:([cigarette "I want cigarettes"]) Okay \pau=1000\ you have to be eightteen years or older to buy cigarettes. Let me check your age. One moment please. ^gotoReactivate(age)
+    u1:([candy "I want candy"]) Okay \pau=1000\ here are our candy sortiment. $item="candy"
+
+proposal: %choice1 $hello=1
+    u1:([soda "I want soda"]) Okay \pau=1000\ here are our soda sortiment.$item="soda"
+    u1:([cigarette "I want cigarettes"]) Okay \pau=1000\ you have to be eightteen years or older to buy cigarettes. Let me check your age. One moment please. ^gotoReactivate(age)
+    u1:([candy "I want candy"]) Okay \pau=1000\ here are our candy sortiment. $item="candy"
       

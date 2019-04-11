@@ -38,14 +38,50 @@ input#goback{
 }
 
 .shopping-cart {
-	top: 8px;
-  	left: 16px;
-	text-align: center;
+	margin: 0 auto;
+    width: 150px;
+  	text-align: center;
 	margin-top: 20px;
 }
 
-.shopping-cart-list {
-	list-style-position: inside;
+.test {
+	margin: 0 auto;
+    width: 150px;
+	list-style-position: outside;
+	text-align: left;
+
+}
+
+input#pay {
+	height: 70px;
+	width: 70px;
+	margin-top: 20px;
+	color: black;
+	font-size: 13px;
 	text-align: center;
+ 	resize: none;
+  	outline: none;
+	background-color: green;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+input#remove {
+	height: 70px;
+	width: 70px;
+	margin-top: 20px;
+	color: black;
+	font-size: 13px;
+	text-align: center;
+ 	resize: none;
+  	outline: none;
+	background-color: red;
+
+
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
 }
 
