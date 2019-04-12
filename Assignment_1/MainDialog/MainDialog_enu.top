@@ -11,12 +11,16 @@ language: enu
 #u:(~hello) ~hello
 
 
-u:([hello hi "hi pepper" "Can you help me"]) Hello \pau=1000\  ^gotoReactivate(choice)
+u:([hello "hi pepper" "Can you help me"]) Hello \pau=1000\  ^gotoReactivate(choice)
 u:([back "go back"]) Okay, ^gotoReactivate(choice1)
 
 u:(e:checkAge $checkAge="cig") Okay \pau=1000\ you have to be 18 years or older to buy cigarettes. Let me check your age. One moment pls. ^gotoReactivate(age)
 
 u:(e:goBack) ^gotoReactivate(choice1)
+
+u:(e:humanDetected) Hello! Do you need help?
+    u1:(yes) Okay, ^gotoReactivate(choice)
+    u1:(no) Okay, come back anytime!
  
 proposal: %age ^run(tasks/age) 
     u1:(e:taskDone) Okay \pau=1000\ I think that you are $myAge years old. $age=$myAge

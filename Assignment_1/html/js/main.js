@@ -97,10 +97,10 @@ function removeItem() {
 
     var listLength = childNodes.length;
     var sum = 0;
-
+    sendToChoregraphe(childNodes[0].innerText);
     if(listLength != 0) {
-        element.removeChild(childNodes[0]); // will remove the element from DOM
         
+        element.removeChild(childNodes[0]); // will remove the element from DOM        
 
         var element = document.getElementById('cartList'); // will return element
     
@@ -111,11 +111,10 @@ function removeItem() {
         document.getElementById('number').innerHTML = (listLength);
 
         for (var i = 0; i < listLength; i++) {
-            var kr = parseInt(childNodes[i].substr(childNodes[i].indexOf(' ')+1),10);
+            var kr = parseInt(childNodes[i].innerText.substr(childNodes[i].innerText.indexOf(' ')+1),10);
             sum += kr;
-            sendToChoregraphe(sum);
         }
 
-        document.getElementById('totalprice').innerHTML += sum;
+        document.getElementById('totalprice').innerHTML = sum;
     }
 }
